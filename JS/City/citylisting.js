@@ -100,6 +100,7 @@ $(document).ready(function () {
                         "paging": false,
                         "processing": true,
                         "serverSide": false,
+                        "searching": false
                     });
                 isProcessing = false;
             }).catch(function (result) {

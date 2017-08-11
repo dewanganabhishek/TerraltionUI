@@ -1,0 +1,94 @@
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="../../css/City/citylisting.css" rel="stylesheet" />
+    <link href="../../css/common.css" rel="stylesheet" />
+    <title>City Listing</title>
+</head>
+<body>
+    <div w3-include-html="../Shared/navbar.html"></div>
+
+    <div class="container body-content">
+        <div class="region-filter">
+            <div class="container region-header">
+                <section class="common-header ">
+                    <div class="left">
+                        <select class="custOptions" id="select_region" onchange="location = this.value;">
+                            <option value="">Select Option</option>
+                            <option value="Continent.html">Continent</option>
+                            <option value="Country.html">Country</option>
+                            <option value="State.html">State</option>
+                            <option value="City.html">City</option>
+                            <option value="Area.html">Area</option>
+                            <option value="Airport.html">Airport</option>
+                            <option value="City_Airport.html">City Airport</option>
+                            <option value="POI.html">POI</option>
+                        </select>
+                        <i class="pe-7s pe-7s-angle-down arrow"></i>
+                    </div>
+                    <div class="right">
+                        <div class="form-elements">
+                            <div class="form-item" id="searchToolDiv">
+                                <i id="btnMainSearch" class="pe-7s-search pe-7s"></i>
+                                <input id="txtSearchByTitle" class="destination" type="text" value="" placeholder="Search By Title....">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <h2 class="light-gray" id="lblMasterHeading"></h2>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="region-filter">
+            <div class="container region-header">
+                <table id="example" class="table table-bordered table-hover continent-detail dataTable no-footer" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th class="title-width sorting">Id</th>
+                            <th class="title-width sorting">Title</th>
+                            <th class="title-width sorting">State Title</th>
+                            <th class="title-width sorting">Country Title</th>
+                            <th class="title-width sorting">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="datatableContent"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="w3-bar col-xs-3 pull-right">
+            <button class="w3-button w3-large w3-black prev">‹</button>
+            <button class="w3-button w3-large w3-black next">›</button>
+        </div>
+    </div>
+    <input type="hidden" id="pageindex" value="0" />
+</body>
+<script src="../../JS/lib/w3.js"></script>
+<script>
+    w3.includeHTML();
+</script>
+
+<script type="text/javascript" src="../../lib/axios/dist/axios.standalone.js"></script>
+<script type="text/javascript" src="../../lib/CryptoJS/rollups/hmac-sha256.js"></script>
+<script type="text/javascript" src="../../lib/CryptoJS/rollups/sha256.js"></script>
+<script type="text/javascript" src="../../lib/CryptoJS/components/hmac.js"></script>
+<script type="text/javascript" src="../../lib/CryptoJS/components/enc-base64.js"></script>
+<script type="text/javascript" src="../../lib/url-template/url-template.js"></script>
+<script type="text/javascript" src="../../lib/apiGatewayCore/sigV4Client.js"></script>
+<script type="text/javascript" src="../../lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script type="text/javascript" src="../../lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script type="text/javascript" src="../../lib/apiGatewayCore/utils.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script src="../../lib/apigClient.js"></script>
+<script src="../../JS/City/citylisting.js"></script>
+

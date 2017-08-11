@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,12 +67,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="UI\Html\Details.html" />
-    <Content Include="UI\Html\index.html" />
-    <Content Include="UI\Html\Listing.html" />
-    <Content Include="UI\Scripts\apigClient.js" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\style.css" />
+    <Content Include="JS\lib\w3.js" />
+    <Content Include="Html\Shared\navbar.html" />
+    <Content Include="lib\apigClient.js" />
     <Content Include="Details.html" />
-    <Content Include="index.html" />
+    <Content Include="Html\City\index.html" />
     <Content Include="lib\apiGatewayCore\apiGatewayClient.js" />
     <Content Include="lib\apiGatewayCore\sigV4Client.js" />
     <Content Include="lib\apiGatewayCore\simpleHttpClient.js" />
@@ -82,15 +86,17 @@
     <Content Include="lib\CryptoJS\rollups\sha256.js" />
     <Content Include="lib\url-template\url-template.js" />
     <Content Include="Listing.html" />
-    <Content Include="UI\Scripts\citylisting.js" />
-    <Content Include="UI\Scripts\Data.js" />
-    <Content Include="UI\Style\citylisting.css" />
+    <Content Include="JS\City\citylisting.js" />
+    <Content Include="Html\Country\Data.js" />
+    <Content Include="css\City\citylisting.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Html\State\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
