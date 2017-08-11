@@ -1,0 +1,119 @@
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="http://devterralatiotool.traveazy.com/Content/Style.css" rel="stylesheet">
+    <link href="http://devterralatiotool.traveazy.com/Content/bootstrap.css" rel="stylesheet">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        .w3-bar .w3-button {
+            white-space: normal;
+        }
+
+        .w3-black, .w3-hover-black:hover {
+            color: #fff !important;
+            background-color: #000 !important;
+        }
+
+        .w3-large {
+            font-size: 18px !important;
+        }
+
+        .w3-black, .w3-hover-black:hover {
+            color: #fff !important;
+            background-color: #000 !important;
+        }
+
+        .w3-circle {
+            border-radius: 50%;
+        }
+    </style>
+
+
+    <!--<link href="https://cdn.datatables.net/select/1.2.2/css/select.bootstrap.min.css" rel="stylesheet">-->
+
+
+    <title>Listing</title>
+    
+
+
+
+
+</head>
+
+<div>
+    <section class="common-header text-center">
+        <div class="left">
+            <select class="custOptions" id="select_region">
+                <option value="">Select Option</option>
+                <option value="0">Continent</option>
+                <option value="1">Country</option>
+                <option value="2">State</option>
+                <option value="3">City</option>
+                <option value="4">Area</option>
+                <option value="5">Airport</option>
+                <option value="6">City Airport</option>
+                <option value="7">POI</option>
+            </select>
+            <i class="pe-7s pe-7s-angle-down arrow"></i>
+        </div>
+        <div class="right">
+            <div class="form-elements">
+                <div class="form-item" id="searchToolDiv">
+                    <i id="btnMainSearch" class="pe-7s-search pe-7s"></i>
+                    <input id="txtSearchByTitle" class="destination" type="text" value="" placeholder="Search By Title....">
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <h2 class="light-gray" id="lblMasterHeading"></h2>
+    </section>
+</div>
+
+<div class="container">
+    <table id="example" class="table table-bordered table-hover continent-detail dataTable no-footer" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th class="title-width sorting">Id</th>
+                <th class="title-width sorting">Title</th>
+                <th class="title-width sorting">State Title</th>
+                <th class="title-width sorting">Country Title</th>
+                <th class="title-width sorting">Status</th>
+
+            </tr>
+        </thead>
+        <tbody class="datatableContent"></tbody>
+    </table>
+</div>
+
+<div class="container">
+    <div class="w3-bar col-xs-3 pull-right">
+        <button class="w3-button w3-large w3-black prev">‹</button>
+        <button class="w3-button w3-large w3-black next">›</button>
+    </div>
+</div>
+<input type="hidden" id="pageindex" value="0" />
+
+<script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+<script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+<script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+<script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+<script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+<script type="text/javascript" src="lib/url-template/url-template.js"></script>
+<script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+<script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script src="UI/Scripts/apigClient.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<!--<script src="https://cdn.datatables.net/select/1.2.2/js/dataTables.select.min.js"></script>-->
+
+<script src="UI/Scripts/citylisting.js"></script>
+
