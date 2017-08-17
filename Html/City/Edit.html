@@ -1,0 +1,64 @@
+﻿
+<style type="text/css">.checkboxGrpou { }</style>
+<form>
+    <section class="add-continent city divEdit" style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-8">
+                    <label>Country</label>
+                    <select id="ddlCountry" name="ddlCountry"></select>
+                </div>
+                <div class="col-sm-3 col-xs-8">
+                    <label>State</label>
+                    <select id="ddlState" name="ddlState">
+                        <!--<option *ngfor="let state of ddlState" [selected]="state.id == selectedState ? true : null" value={{state.id}}>{{state.Title}}</option>-->
+                    </select>
+                </div>
+                <div class="col-sm-3 col-xs-8">
+                    <label>City</label>
+                    <input type="text" id="cityTitle" name="cityFormodel.Title">
+                </div>
+                <div class="col-sm-3 col-xs-8">
+                    <label for="displayTitle">Display Title</label>
+                    <input id="displayTitle" name="displayTitle" required type="text">
+                </div>
+
+                <div class="">
+                    <label>Alternare Names</label>
+                    <input id="altertnateNames" type="text" value="" data-role="tagsinput" class="form-control">
+                </div>
+
+                <div class="col-sm-6 checkboxGrpou">
+                    <div class="row">
+                        <label>Is SeoVisible</label>
+                        <input type="checkbox" id="seovisible" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 checkboxGrpou">
+                    <div class="row">
+                        <label>IsActive</label>
+                        <input type="checkbox" id="isActive" class="form-control">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="Lattitue">Lattitude:</label> <input id="lattitude" name="Lattitue" type="text" class="form-control bfh-number">
+                    <label for="Longitude">Longitude : </label><input id="longitude" name="Longitude" type="text" class="form-control bfh-number">
+                </div>
+
+                <button class="btn btn-1 btn-1b" type="button" id="btnCityCancel">
+                    <span class="content">Cancel</span>
+                    <span class="progress"></span>
+                </button>
+
+
+                <button class="btn btn-1 btn-1b publish" click="CancelEdit()" type="button" id="btnpublish">
+                    <span class="content">Save</span>
+                    <span class="progress"></span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+</form>

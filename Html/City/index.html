@@ -7,6 +7,7 @@
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="../../css/City/citylisting.css" rel="stylesheet" />
     <link href="../../css/common.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" rel="stylesheet" />
     
     <title>City Listing</title>
 </head>
@@ -56,6 +57,7 @@
                             <th class="title-width sorting">State Title</th>
                             <th class="title-width sorting">Country Title</th>
                             <th class="title-width sorting">Status</th>
+                            <th>Edit/Publish</th>
                         </tr>
                     </thead>
                     <tbody class="datatableContent"></tbody>
@@ -70,7 +72,11 @@
             <button class="w3-button w3-large w3-black next">›</button>
         </div>
     </div>
+    <div w3-include-html="../City/Edit.html"></div>
+   
     <input type="hidden" id="pageindex" value="0" />
+    <input type="hidden" id="ddlCountryId" value="-1"/>
+    <input type="hidden" id="ddlStateId" value="-1" />
 </body>
 <script src="../../JS/lib/w3.js"></script>
 <script>
@@ -90,6 +96,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
 <script src="../../lib/apigClient.js"></script>
 <script src="../../JS/City/citylisting.js"></script>
 

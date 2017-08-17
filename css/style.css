@@ -595,3 +595,10 @@ input.cmn-toggle-yes-no:checked + label:after {
     height: 40px;
     padding: 12px;
 }
+
+.add-continent input[type="text"] {
+    margin: 0px 0px 20px;
+}
+.checkboxGrpou {
+    margin: 20px 0;
+}

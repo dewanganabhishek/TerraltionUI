@@ -10,3 +10,9 @@ D:\AWS Lambda\TerraltionUI-master\bin\Teralation.pdb
 D:\AWS Lambda\TerraltionUI-master\obj\Debug\Teralation.csprojResolveAssemblyReference.cache
 D:\AWS Lambda\TerraltionUI-master\obj\Debug\Teralation.dll
 D:\AWS Lambda\TerraltionUI-master\obj\Debug\Teralation.pdb
+D:\Dev\Teralation\bin\Teralation.dll.config
+D:\Dev\Teralation\bin\Teralation.dll
+D:\Dev\Teralation\bin\Teralation.pdb
+D:\Dev\Teralation\obj\Debug\Teralation.csprojResolveAssemblyReference.cache
+D:\Dev\Teralation\obj\Debug\Teralation.dll
+D:\Dev\Teralation\obj\Debug\Teralation.pdb
