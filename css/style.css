@@ -599,6 +599,68 @@ input.cmn-toggle-yes-no:checked + label:after {
 .add-continent input[type="text"] {
     margin: 0px 0px 20px;
 }
-.checkboxGrpou {
+.custom_check {
     margin: 20px 0;
+}
+
+/*check box*/
+.custom_check label {
+    color: #000;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    font-weight:400;
+}
+.custom_check input {
+    display: none;
+}
+.custom_check label:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top:3px;
+    background: #fff;
+    border:1px solid #aaa;
+    text-align: center;
+    line-height: 30px;
+    color: #111;
+    font-size: 29px;
+    border-radius:3px;  
+}
+.custom_check label:after {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top:3px;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    color: green;
+    text-align: center;
+    transform: scale(5,5);
+    -webkit-transform: scale(5,5);
+    -moz-transform: scale(5,5);
+    opacity: 0;
+    pointer-events:none;
+    transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+}
+.custom_check input:checked+label:after {
+    color: green;
+    transform: scale(1,1);
+    opacity: 1;
+}
+.custom_check span{
+    margin-right:15px;
 }

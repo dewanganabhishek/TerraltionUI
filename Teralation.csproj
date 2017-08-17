@@ -71,6 +71,7 @@
     <Content Include="css\common.css" />
     <Content Include="css\Site.css" />
     <Content Include="css\style.css" />
+    <Content Include="Html\City\Edit.html" />
     <Content Include="JS\lib\w3.js" />
     <Content Include="Html\Shared\navbar.html" />
     <Content Include="lib\apigClient.js" />
