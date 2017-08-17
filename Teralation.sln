@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teralation", "Teralation.csproj", "{9317033D-6710-48E4-8EF1-3E0FD2BF40ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9317033D-6710-48E4-8EF1-3E0FD2BF40ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9317033D-6710-48E4-8EF1-3E0FD2BF40ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9317033D-6710-48E4-8EF1-3E0FD2BF40ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9317033D-6710-48E4-8EF1-3E0FD2BF40ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

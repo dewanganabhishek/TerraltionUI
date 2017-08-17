@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="css\bootstrap.css" />
     <Content Include="css\common.css" />
+    <Content Include="css\Site.css" />
     <Content Include="css\style.css" />
     <Content Include="JS\lib\w3.js" />
     <Content Include="Html\Shared\navbar.html" />
@@ -87,7 +88,6 @@
     <Content Include="lib\url-template\url-template.js" />
     <Content Include="Listing.html" />
     <Content Include="JS\City\citylisting.js" />
-    <Content Include="Html\Country\Data.js" />
     <Content Include="css\City\citylisting.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -95,6 +95,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Html\Country\" />
     <Folder Include="Html\State\" />
   </ItemGroup>
   <PropertyGroup>

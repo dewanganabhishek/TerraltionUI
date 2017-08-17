@@ -1,0 +1,371 @@
+﻿/*region  css*/
+body {
+    font-family: "Montserrat-Regular";
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background:#f2f2f2;
+}
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dl-horizontal dt {
+    white-space: normal;
+}
+.region-wrapper {
+    box-shadow: 0 0 10px #eee !important;
+    color: #555;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 10.5%;
+}
+.region-wrapper .navbar-nav{
+    margin: 0 -15px 0;
+}
+.region-wrapper .navbar-nav > li {
+    color: #fff;
+    text-transform: uppercase;
+}
+.region-wrapper .navbar-nav > li:hover{
+    background:#2D282D;
+}
+.region-wrapper .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.region-wrapper .navbar-nav > li > a {
+    letter-spacing: 1px;
+    line-height:34px;
+}
+.region-wrapper .navbar-nav > li > a {
+    padding-bottom: 21px;
+}
+.region-wrapper .navbar-inverse{
+    opacity:0.9;
+}
+.region-wrapper .dropdown-menu{
+     background-color: #383838;
+}
+.region-wrapper .dropdown-menu > li > a {
+   color: #fff;
+   padding: 10px 20px;
+}
+.region-wrapper .navbar-nav .destination:hover > ul.dropdown-menu{
+    display:block;
+   -webkit-animation: flipInX .3s ease-in ;
+    animation:flipInX .3s ease-in ;
+    -moz-animation: flipInX .3s ease-in;
+    margin-top:0;
+    border:none;
+    border-radius:0px;
+    padding:0;
+}
+.region-wrapper .navbar-nav .destination .down-arrow{
+    display: inline-block;
+    font-size: 2em;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+
+.region-wrapper .dropdown-menu li a:hover{
+    background:#555;
+    color:#DF4782;
+}
+.region-wrapper .body-content{
+     padding-left:0;
+     padding-right:0;
+}
+.region-filter .region-header{
+   background: rgba(0, 0, 0, 0) url("../Images/Dubai.jpg") no-repeat scroll 0 0 / 100% 100%;
+    display: inline-block;
+    width: 100%;
+}
+
+.common-header{
+    margin:0;
+}
+
+/*.common-header .light-gray {
+    color: #eee;
+    text-align:left;
+      margin: 10px 15px;
+}
+.common-header h2 {
+    font-family: "jennaSue";
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.orange {
+    color: #ff6a00;
+    font-weight: bold;
+    margin: 0 5px;
+}
+.common-header .back-btn {
+    float: right;
+    padding: 10px 0;
+    text-align: right;
+}*/
+
+.white-btn {
+    background-color: transparent;
+    color: #fff;
+}
+.white-btn, .pink-btn, .green-btn {
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.green-btn {
+    background: green none repeat scroll 0 0;
+}
+.pink-btn {
+    background: #df4782 none repeat scroll 0 0;
+    color: #770430;
+}
+
+/*.progress-button {
+    background: rgba(255, 165, 0, 0.9) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    letter-spacing: 1px;
+    outline: medium none;
+    overflow: hidden;
+    padding: 0.55em 1em;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 50;
+}
+.progress-button .content {
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease 0s;
+    z-index: 10;
+}
+.progress-button .progress {
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: width 0s ease 0.3s, opacity 0.3s ease 0s;
+    width: 0;
+    z-index: 0;
+}*/
+
+.left {
+    display: inline-block;
+}
+.common-header select.custOptions {
+    color: #770430;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.common-header select.custOptions {
+    background: #df4782 none repeat scroll 0 0;
+    border: 0 none;
+    height: 50px;
+    outline: 0 none;
+    padding-left: 10px;
+    position: relative;
+    width: 300px;
+}
+.common-header select.custOptions {
+    color: #770430;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.common-header select.custOptions option {
+    background: #df4782 none repeat scroll 0 0;
+    border: 0 none;
+    font-size: 15px;
+    outline: 0 none;
+    padding: 10px;
+}
+.common-header .arrow {
+    background: #df4782 none repeat scroll 0 0;
+    color: #770430;
+    cursor: pointer;
+    font-size: 35px;
+    line-height: 50px;
+    position: relative;
+    right: 5px;
+    top: 10px;
+}
+.common-header .right {
+    margin-left: -10px;
+    width: 50%;
+}
+.right {
+    display: inline-block;
+}
+.right [class^="pe-7s-"], [class*=" pe-7s-"]{
+    cursor:pointer;
+}
+.form-elements .form-item {
+    position: relative;
+}
+.form-elements .pe-7s {
+    color: #666;
+    font-size: 30px;
+    line-height: 49px;
+    padding-right: 12px;
+    /*pointer-events: none;*/
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+.common-header .right input[type="text"] {
+    height: 50px;
+}
+/*input[type="search"], input[type="text"], input[type="url"], input[type="number"], input[type="password"], input[type="email"], input[type="file"], select {
+    -moz-appearance: none;
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+    border: medium none;
+    color: #000;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    width: 100%;
+}*/
+/*Checkbox css*/
+ .continent-detail tbody tr td .checkbox , .continent-modal .checkbox{
+    display: inline-block;
+    height: 0px;
+    line-height: 30px;
+    padding-left: 0;
+    width: 80%;
+}
+  .continent-detail tbody tr td input[type="checkbox"], .continent-modal input[type="checkbox"] {
+    margin-left: 18px;
+}
+    /*.slide-add .checkbox input + i::after {
+    left: 5px;
+    top: 5px;
+    width: 16px;
+}*/
+.continent-detail tbody tr td .checkbox span, .continent-modal .checkbox span{
+    color: inherit;
+    text-indent: 35px;
+    text-transform: uppercase;
+    width: 100%;
+      display: block;
+}
+.continent-detail tbody tr td .checkbox input:checked + i::after, .continent-modal .checkbox input:checked + i::after{
+    opacity: 1;
+}
+ 
+   .continent-detail tbody tr td .checkbox input + i::after, .continent-modal .checkbox input + i::after{
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.1s ease 0s;
+}
+  .continent-detail tbody tr td .checkbox input:checked, .continent-modal .checkbox input:checked{
+        padding:5px
+    }
+.continent-detail tbody tr td .checkbox input + i::after,  .continent-modal .checkbox input + i::after{
+    background: #4B9E4B url("../Images/tick.png") no-repeat scroll center center;  
+    content: "";
+    height: 25px;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 25px;
+}
+.continent-detail tbody tr td .checkbox i, .continent-modal .checkbox i{
+    background: #999 none repeat scroll 0 0;
+    bottom: 3px;
+    height: 25px;
+    left: 0;
+    outline: medium none;
+    position: absolute;
+    right: 5px;
+    width: 25px;
+    display:block;
+    top:12px;
+}
+.continent-detail tbody tr td .checkbox i{
+    top:0;
+}
+.continent-detail tbody tr td .checkbox i, .continent-modal .checkbox i{
+    position:relative;
+   }
+
+/*.slide-add .checkbox i:after{
+    background:#ccc
+}*/
+.continent-detail tbody tr td i{
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    text-indent: 10px;
+}
+.continent-detail tbody tr td .checkbox input, .continent-modal .checkbox input{
+    left: -9999px;
+    position: absolute;
+}
+.continent-detail tbody tr td .checkbox, .continent-modal .checkbox{
+    cursor: pointer;
+    line-height: 0;
+    position: relative;
+}
+.continent-modal .checkbox {
+    margin-left: 0;
+    margin-top: 0px;
+    padding: 0;
+    position:relative;
+}
+.continent-modal .cust_checkbox{
+    margin-top:15px;
+}
+
+/*btn css*/
+.btn-green {
+  background-color: #DF4782;
+  border: 2px solid #DF4782;
+  color:  #fff;
+  border-radius:0;
+}
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+  border-color: #DF4782;
+  color: #770430;
+  background-color: transparent;
+}
+.btn-gray {
+  background-color:#5cb85c;
+  border: 2px solid #5cb85c;
+  color: #fff;
+  border-radius:0;
+}
+.btn-gray:hover,
+.btn-gray:active,
+.btn-gray:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  color:#333;
+  background-color:transparent;
+}
+
+ table.dataTable .btn{
+        font-size:20px;
+        padding:0 8px;
+    }
+      table.dataTable .btn-green ,  table.dataTable .btn-gray{
+          border-width:1px
+      }
