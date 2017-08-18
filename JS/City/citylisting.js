@@ -98,6 +98,7 @@ $(document).ready(function () {
                         htmlResult = htmlResult + "<td><input type='checkbox' checked='checked' ></td>";
                     }
 
+                    //htmlResult = htmlResult + '<td></td>';
                     htmlResult = htmlResult + '<td><span style="cursor:pointer" class="editCity glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;<span style="cursor:pointer" class="glyphicon glyphicon-globe"></span></td>';
                     htmlResult = htmlResult + '</tr>';
                     $('#example').append(htmlResult);
@@ -115,7 +116,15 @@ $(document).ready(function () {
                         "processing": true,
                         "serverSide": false,
                         "searching": false,
-                        "bInfo": false
+                        "bInfo": false,
+                        "columnDefs": [
+                              { "width": "10px", "targets": 0 },
+                              { "width": "400px", "targets": 1 },
+                              { "width": "300px", "targets": 2 },
+                              { "width": "30px", "targets": 3 },
+                              { "width": "70px", "targets": 4 },
+                              { "width": "70px", "targets": 5 }
+                        ],
                     });
                 isProcessing = false;
             }).catch(function (result) {
@@ -136,7 +145,7 @@ $(document).ready(function () {
         var additionalParams = {};
         apigClient.cityDetailsGet(params, body, additionalParams)
             .then(function (result) {
-            console.log(result);
+                console.log(result);
                 $('#cityTitle').val(result.data.Title);
                 $('#displayTitle').val(result.data.CountryTitle + ", " + result.data.Title);
                 $('#lattitude').val(result.data.Latitude);
@@ -153,7 +162,7 @@ $(document).ready(function () {
 
                 $('#ddlCountryId').val(result.data.CountryId);
                 $('#ddlStateId').val(result.data.StateId);
-                
+
                 populateCountryDropdDown("en", 2, cityid);
                 populateStateDropdDown("en", 3, 0);
 
@@ -206,7 +215,7 @@ $(document).ready(function () {
     function populateStateDropdDown(languageCode, regiontype, regionId) {
         $("#ddlState").html('');
         $("#ddlState").append($("<option selected=true></option>").val('-1').html('--Select--'));
-        
+
         var citylist = populateRegionDropDown(languageCode, regiontype, regionId);
         if (citylist != null) {
             citylist.forEach(function (e) {
@@ -230,11 +239,11 @@ $(document).ready(function () {
             url: baseUrl + "region=" + region + "&regionId=" + regionId + "&languagecode=" + languageCode,
             cache: false,
             type: "GET",
-            async : false,
+            async: false,
             success: function (response) {
                 if (response.RegionList != null) {
-                   data = response.RegionList;
-                } 
+                    data = response.RegionList;
+                }
             },
             error: function (xhr) {
                 console.log("error:" + xhr);

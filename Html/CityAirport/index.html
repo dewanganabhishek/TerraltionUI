@@ -1,4 +1,4 @@
-
+ï»¿
 <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet">
@@ -7,8 +7,7 @@
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="../../css/City/citylisting.css" rel="stylesheet" />
     <link href="../../css/common.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
     <title>City Listing</title>
 </head>
 <body>
@@ -24,12 +23,10 @@
                             <option value="../Continent/index.html">Continent</option>
                             <option value="../Country/index.html">Country</option>
                             <option value="../State/index.html">State</option>
-                            <option value="../City/index.html" selected>City</option>
+                            <option value="../City/index.html">City</option>
                             <option value="../Area/index.html">Area</option>
                             <option value="../Airport/index.html">Airport</option>
-                            <option value="../CityAirport/index.html">City Airport</option> 
-                            <option value="../POI/index.html">POI</option>
-                            <option value="../POI/.html">POI</option>
+                            <option value="../CityAirport/index.html" selected>City Airport</option>
                         </select>
                         <i class="pe-7s pe-7s-angle-down arrow"></i>
                     </div>
@@ -55,10 +52,10 @@
                         <tr>
                             <th class="title-width sorting">Id</th>
                             <th class="title-width sorting">Title</th>
-                            <th class="title-width sorting">State Title</th>
-                            <th class="title-width sorting">Country Title</th>
-                            <th class="title-width sorting">Status</th>
-                            <th>Edit/Publish</th>
+                            <!--<th class="title-width sorting">State Title</th>
+                            <th class="title-width sorting">Country Title</th>-->
+                            <th class="title-width ">Status</th>
+                            <th class="title-width ">Action</th>
                         </tr>
                     </thead>
                     <tbody class="datatableContent"></tbody>
@@ -69,14 +66,11 @@
 
     <div class="container">
         <div class="w3-bar col-xs-3 pull-right">
-            <button class="w3-button w3-large w3-black prev">‹</button>
-            <button class="w3-button w3-large w3-black next">›</button>
+            <button class="w3-button w3-large w3-black prev">â€¹</button>
+            <button class="w3-button w3-large w3-black next">â€º</button>
         </div>
     </div>
-    <div w3-include-html="../City/Edit.html"></div>
     <input type="hidden" id="pageindex" value="0" />
-    <input type="hidden" id="ddlCountryId" value="-1" />
-    <input type="hidden" id="ddlStateId" value="-1" />
 </body>
 <script src="../../JS/lib/w3.js"></script>
 <script>
@@ -96,7 +90,6 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
 <script src="../../lib/apigClient.js"></script>
-<script src="../../JS/City/citylisting.js"></script>
+<script src="../../JS/Continent/continentlisting.js"></script>
 

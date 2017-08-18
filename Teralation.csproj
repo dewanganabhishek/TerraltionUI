@@ -71,9 +71,21 @@
     <Content Include="css\common.css" />
     <Content Include="css\Site.css" />
     <Content Include="css\style.css" />
+    <Content Include="Html\Airport\index.html" />
+    <Content Include="Html\Area\index.html" />
+    <Content Include="Html\CityAirport\index.html" />
     <Content Include="Html\City\Edit.html" />
+    <Content Include="Html\Continent\index.html" />
+    <Content Include="Html\Country\index.html" />
+    <Content Include="Html\State\index.html" />
+    <Content Include="JS\Airport\airportlisting.js" />
+    <Content Include="JS\Area\arealisting.js" />
+    <Content Include="JS\CityAirport\cityAirportlisting.js" />
+    <Content Include="JS\Continent\continentlisting.js" />
+    <Content Include="JS\Country\countrylisting.js" />
     <Content Include="JS\lib\w3.js" />
     <Content Include="Html\Shared\navbar.html" />
+    <Content Include="JS\State\statelisting.js" />
     <Content Include="lib\apigClient.js" />
     <Content Include="Details.html" />
     <Content Include="Html\City\index.html" />
@@ -95,10 +107,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Html\Country\" />
-    <Folder Include="Html\State\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -114,7 +123,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59519</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59520/</IISUrl>
+          <IISUrl>http://localhost:59519/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

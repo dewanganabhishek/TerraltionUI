@@ -602,7 +602,6 @@ input.cmn-toggle-yes-no:checked + label:after {
 .custom_check {
     margin: 20px 0;
 }
-
 /*check box*/
 .custom_check label {
     color: #000;
@@ -663,4 +662,9 @@ input.cmn-toggle-yes-no:checked + label:after {
 }
 .custom_check span{
     margin-right:15px;
+}
+
+.editCity {
+    padding-right: 25px;
+    padding-left: 25px;
 }
